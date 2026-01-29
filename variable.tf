@@ -4,7 +4,7 @@ variable "vpc_test_cidr" {
 # defalut ivvakapothe emi anedhi chudali run chesi
 
 variable "project_test_name" {
-    default = "roboshopsss"
+    default = "roboshop"
 }
 
 variable "environment_test"{
@@ -14,7 +14,7 @@ variable "environment_test"{
 
 variable "vpc_test_tags" {
     default = {
-        Purpose = "VPC-vvvvvvvv"
+        Purpose = "VPC-mine-test"
         DontDelete = "true"
     }
 }
