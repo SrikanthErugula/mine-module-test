@@ -1,23 +1,23 @@
-variable "vpc_test_cidr" {
-    default = "10.0.0.0/16"
-}
-# defalut ivvakapothe emi anedhi chudali run chesi
+# variable "vpc_test_cidr" {
+#     default = "10.0.0.0/16"
+# }
+# # defalut ivvakapothe emi anedhi chudali run chesi
 
-variable "project_test_name" {
-    default = "roboshop"
-}
+# variable "project_test_name" {
+#     default = "roboshop"
+# }
 
-variable "environment_test"{
-    default = "dev"
-}
+# variable "environment_test"{
+#     default = "dev"
+# }
 
 
-variable "vpc_test_tags" {
-    default = {
-        Purpose = "VPC-mine-test"
-        DontDelete = "true"
-    }
-}
+# variable "vpc_test_tags" {
+#     default = {
+#         Purpose = "VPC-mine-test"
+#         DontDelete = "true"
+#     }
+# }
 
 # # ikkada variales y ante user ki chanace ivvali replce chesukovadaniki,
 
@@ -41,3 +41,20 @@ variable "vpc_test_tags" {
 # #     type = bool # peer.tf lo conditon ichhan so dhaniki access 
 # #     default = true 
 # # }
+
+
+
+
+
+# practice 24/06/26
+
+variable "ami_id" {
+  default = "ami-0220d79f3f480ecf5"
+}
+variable "sg_ids" {
+  default = ["sg-0f74162209ede7254"]
+}
+
+variable "instance_type" {
+  default = ""
+}
