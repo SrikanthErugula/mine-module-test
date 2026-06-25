@@ -48,13 +48,37 @@
 
 # practice 24/06/26
 
-variable "ami_id" {
-  default = "ami-0220d79f3f480ecf5"
-}
-variable "sg_ids" {
-  default = ["sg-0f74162209ede7254"]
+# variable "ami_id" {
+#   default = "ami-0220d79f3f480ecf5"
+# }
+# variable "sg_ids" {
+#   default = ["sg-0f74162209ede7254"]
+# }
+
+# variable "instance_type" {
+#   default = ""
+# }
+
+
+#VPC
+
+variable "vpc_tags_mtest" {
+  default = {
+    Purpose = " module-test"
+    DontDelete = "True"
+  }
 }
 
-variable "instance_type" {
-  default = ""
+variable "pro_name_test" {
+  type = string
+  default = "roboshop"
+}
+variable "env_name_test" {
+  type = string
+  default = "dev"
+}
+
+variable "vpc_cidr_test" {
+  type = string
+  default = "10.0.0.0/16"
 }
